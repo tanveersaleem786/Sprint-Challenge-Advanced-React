@@ -7,7 +7,7 @@ function ShowChart() {
   const [players, setPlayers] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/players')
+    axios.get('http://localhost:6000/api/players')
     .then( response => {
       setPlayers(response.data);
     })

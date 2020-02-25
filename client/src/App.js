@@ -12,9 +12,9 @@ class App extends Component {
       return (
         <div className="container">
           <div className="header">
-            <img src={lambdalogo} alt="Lambda Logo" />
+            <img data-testid="logo" src={lambdalogo} alt="Lambda Logo" />
             <p>❤️'s</p>
-            <img src={githublogo} alt="GitHub Logo" />
+            <img data-testid="git" src={githublogo} alt="GitHub Logo" />
           </div>
           <div className="cards">
             <ProvideApiData>
