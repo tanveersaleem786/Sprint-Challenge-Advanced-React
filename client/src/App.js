@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import PlayerCard from './components/PlayerCard';
+import ProvideApiData from './components/ProvideApiData';
+import lambdalogo from './lambdalogo.png';
+import githublogo from './githublogo.png';
+import ShowChart from './components/ShowChart';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+
+    render() {
+      return (
+        <div className="container">
+          <div className="header">
+            <img data-testid="logo" src={lambdalogo} alt="Lambda Logo" />
+            <p>❤️'s</p>
+            <img data-testid="git" src={githublogo} alt="GitHub Logo" />
+          </div>
+          <div className="cards">
+            <ProvideApiData>
+              {({ data }) => {
+                
+                let newPlayer = data.map((player, index) => {
+                  return (<PlayerCard player={player} key={index} />) 
+                })
+                return newPlayer;
+                }
+              }
+            </ProvideApiData>
+            <ShowChart />
+          </div>
+        </div>
+    );
+  }
 }
 
 export default App;

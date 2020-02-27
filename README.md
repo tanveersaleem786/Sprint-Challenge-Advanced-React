@@ -1,3 +1,5 @@
+#Tanveer Saleem
+#
 # Sprint Challenge: Advanced React - Women's World Cup
 
 This challenge allows you to practice the concepts and techniques learned over the past Sprint and apply them in a concrete project. This Sprint explored class components, custom hooks, and testing. In your challenge for this Sprint, you will demonstrate proficiency by creating an application that consumes data from an API using a custom hook, displays that data on the DOM, and tests your React components.
@@ -23,9 +25,28 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit the `ANSWERS.md` file to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Why would you use class component over function components (removing hooks from the question)?
+
+Class components have been a big part of the React ecosystem because they brought a lot of functionality that we normally didn’t get with the React API when using function components. 
+
+
 - [ ] Name three lifecycle methods and their purposes.
+
+1) The render() method is one of the React lifecycle methods that is used to tell React, to return some piece of DOM.
+2) The componentDidMount method is a part of the mounting phase in the React Lifecycle. This method gets called as soon as the render method is called the first time.
+3) shouldComponentUpdate is a method that can be use  to stop a component from calling render if necessary.
+4) componentWillUnmount  can be used for any clean up you may need to do
+
 - [ ] What is the purpose of a custom hook?
+
+Hooks you are building  yourself are called customize hooks, cutomize it to apply non-visual behavior and stateful logic throughout your components. This way, you can reuse the same hook over and over again. we can build a reusable custom hook for anything from handling controlled inputs, to managing event listeners, or watching for key presses.
+
 - [ ] Why is it important to test our apps?
+
+Testing minimizes the risk of bugs finding their way into production code. Testing is NOT optional. Testing should be a part of every developer’s workflow. A feature is not done until it is fully tested!
+#Surfaces bugs faster.
+#Reduces the risk of regressions.
+#Allows us to trust the code.
+#Makes us think about the edge cases.
 
 ## Project Set Up
 

@@ -1,0 +1,10 @@
+run server 
+npm start [in main directory]
+
+run client
+npm start
+
+Install in Client
+----------------
+npm install axios --save
+npm install --save react-chartjs-2 chart.js
